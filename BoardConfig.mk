@@ -27,8 +27,10 @@ TARGET_COPY_OUT_VENDOR := vendor
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := sakura_defconfig
+TARGET_KERNEL_CONFIG := sleepy_defconfig
 TARGET_KERNEL_VERSION := 4.9
+TARGET_KERNEL_CLANG_VERSION := r383902b
+TARGET_KERNEL_CLANG_COMPILE := true
 
 # Partitions
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
@@ -53,5 +55,7 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
+#VNDK
+BOARD_SYSTEMSDK_VERSIONS:= 29
 # Inherit from the proprietary version
 -include vendor/xiaomi/sakura/BoardConfigVendor.mk
