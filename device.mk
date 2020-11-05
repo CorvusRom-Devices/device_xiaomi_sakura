@@ -41,8 +41,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5 \
     android.hardware.camera.device@3.4 \
     vendor.qti.hardware.camera.device@1.0.vendor \
-    libdng_sdk.vendor \
-    Snap
+    libdng_sdk.vendor
 
 # ConsumerIr
 PRODUCT_PACKAGES += \
@@ -63,9 +62,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
 
-# Touch HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.xiaomi_8953
 #Prebuilts
 PRODUCT_COPY_FILES += \
 		            prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-full.so \
