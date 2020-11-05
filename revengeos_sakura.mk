@@ -23,7 +23,7 @@ $(call inherit-product, device/xiaomi/sakura/device.mk)
 
 # Inherit some common LineageOS stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/revengeos/config/common_full_phone.mk)
+$(call inherit-product, vendor/revengeos/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sakura
@@ -37,7 +37,10 @@ TARGET_VENDOR := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="tissot-user 8.0.0 OPR1.170623.026 8.1.10 release-keys"
+    PRIVATE_BUILD_DESC="coral-user 11 RP1A.201105.002 6869500 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "xiaomi/tissot/tissot_sprout:8.0.0/OPR1.170623.026/8.1.10:user/release-keys"
+BUILD_FINGERPRINT := "google/coral/coral:11/RP1A.201105.002/6869500:user/release-keys"
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.fingerprint=$(BUILD_FINGERPRINT)
