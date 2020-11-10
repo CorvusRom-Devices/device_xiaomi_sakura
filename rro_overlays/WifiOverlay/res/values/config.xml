@@ -41,4 +41,7 @@
 
     <!-- Whether device supports wifi ap mac randomization -->
     <bool name="config_wifi_ap_randomization_supported">true</bool>
+
+    <!-- Enable WPA2 to WPA3 auto-upgrade -->
+    <bool translatable="false" name="config_wifiSaeUpgradeEnabled">false</bool>
 </resources>
