@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/revengeos_sakura.mk
+    $(LOCAL_DIR)/bootleg_sakura.mk

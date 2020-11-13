@@ -23,11 +23,11 @@ $(call inherit-product, device/xiaomi/sakura/device.mk)
 
 # Inherit some common LineageOS stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/revengeos/config/common.mk)
+$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sakura
-PRODUCT_NAME := revengeos_sakura
+PRODUCT_NAME := bootleg_sakura
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 6 Pro
