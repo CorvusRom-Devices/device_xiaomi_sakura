@@ -1,4 +1,10 @@
+allow init proc:file setattr;
 allow init proc_boot_reason:file r_file_perms;
+<<<<<<< HEAD
+=======
+allow init proc_touchpanel:file { open write };
+allow init socket_device:sock_file { create setattr unlink };
+>>>>>>> 743f6c5... [DNM]sakura: sepolicy: Address some denials
 allow init hal_memtrack_default:process noatsecure;
 allow hal_memtrack_default sysfs_kgsl:lnk_file read;
 allow system_app sysfs_kgsl:lnk_file read;
@@ -6,6 +12,7 @@ allow hal_fingerprint_default storage_file:lnk_file read;
 allow init vendor_file:file { execute };
 allow init hwservicemanager:binder { call };
 allow init hwservicemanager:binder { transfer };
+allow init iorapd_data_file:file { getattr };
 allow init sysfs_graphics:file { read };
 allow init sysfs_graphics:file { open };
 allow init sysfs_graphics:file { write };
@@ -14,5 +21,40 @@ allow init sysfs_leds:lnk_file { read };
 r_dir_file(init, vfat)
 allow init sysfs_kgsl:file { setattr };
 allow init sysfs_kgsl:lnk_file { read };
+allow init sysfs:dir { add_name write };
 allow init sysfs:file { setattr };
 allow init hal_usb_hwservice:hwservice_manager { find };
+allow init location_data_file:file ioctl;
+allow init self:socket { create ioctl write };
+allow init sysfs_data:file { open read };
+allow init vendor_file:file { execute execute_no_trans };
+
+allow init fsck:process noatsecure;
+allow init hal_gatekeeper_qti:process noatsecure;
+allow init hal_keymaster_qti:process noatsecure;
+allow init hal_wifi_supplicant_default:process noatsecure;
+allow init ueventd:process noatsecure;
+allow init vendor_init:process noatsecure;
+allow init hwservicemanager:process noatsecure;
+allow init servicemanager:process noatsecure;
+allow init vdc:process noatsecure;
+allow init vndservicemanager:process noatsecure;
+allow init vold:process noatsecure;
+
+allow init bootanim:process noatsecure;
+allow init bootstat:process noatsecure;
+allow init gatekeeperd:process noatsecure;
+allow init hal_audio_default:process noatsecure;
+allow init hal_fingerprint_default:process noatsecure;
+allow init hal_imsrtp:process noatsecure;
+allow init ims:process noatsecure;
+allow init init_fingerprint:process noatsecure;
+allow init kernel:system module_request;
+allow init logd:process noatsecure;
+allow init netd:process noatsecure;
+allow init rild:process noatsecure;
+allow init tombstoned:process noatsecure;
+allow init tzdatacheck:process noatsecure;
+allow init usbd:process noatsecure;
+allow init zygote:process noatsecure;
+allow init adbd:process { noatsecure };

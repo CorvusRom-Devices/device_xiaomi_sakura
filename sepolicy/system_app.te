@@ -12,3 +12,13 @@ allow system_app sysfs_battery_supply:file { read };
 allow system_app sysfs_battery_supply:file { open };
 allow system_app sysfs_battery_supply:file { getattr };
 
+<<<<<<< HEAD
+=======
+# fm_radio app needes  open read write on fm_radio_device
+allow system_app fm_radio_device:chr_file r_file_perms;
+set_prop(system_app, fm_prop)
+
+allow system_app apk_data_file:dir { write };
+allow system_app vendor_default_prop:file { getattr open read };
+allow system_app vendor_default_prop:file {map};
+>>>>>>> 743f6c5... [DNM]sakura: sepolicy: Address some denials

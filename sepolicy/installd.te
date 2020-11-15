@@ -1,1 +1,2 @@
 allow installd installd:capability { kill };
+allow installd system_data_file:file setattr;
