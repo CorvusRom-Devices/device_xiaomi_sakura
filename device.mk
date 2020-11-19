@@ -412,6 +412,10 @@ PRODUCT_PACKAGES += \
     init.camera.rc \
     init.camera.sh
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    removepackages
+
 # RenderScript HAL
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
