@@ -1,0 +1,7 @@
+allow isolated_app app_data_file:dir r_dir_perms;
+allow isolated_app system_data_file:dir { open read setattr getattr };
+allow isolated_app system_data_file:file { open write setattr append unlink link rename };
+allow isolated_app system_data_file:file { read getattr execute };
+
+get_prop(isolated_app, boottime_prop)
+get_prop(isolated_app, cnd_vendor_prop)

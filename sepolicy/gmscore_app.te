@@ -10,3 +10,5 @@ allow gmscore_app mnt_vendor_file:lnk_file getattr;
 allow gmscore_app vendor_camera_prop:file { open read getattr };
 allow gmscore_app unlabeled:file { open read getattr };
 allow gmscore_app bluetooth_audio_hal_prop:file { open read getattr };
+allow gmscore_app hal_memtrack_hwservice:hwservice_manager find;
+allow gmscore_app hal_memtrack_default:binder call;

@@ -1,3 +1,5 @@
+allow untrusted_app_27 app_data_file:file { execute };
+allow untrusted_app_27 app_data_file:file { relabelfrom };
 allow untrusted_app_27 bluetooth_prop:file read;
 allow untrusted_app_27 bootloader_boot_reason_prop:file read;
 allow untrusted_app_27 runtime_event_log_tags_file:file read;
