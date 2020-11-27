@@ -59,3 +59,4 @@ PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 BOARD_SYSTEMSDK_VERSIONS:= 29
 # Inherit from the proprietary version
 -include vendor/xiaomi/sakura/BoardConfigVendor.mk
+
