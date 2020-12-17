@@ -1,4 +1,4 @@
-# Audio ACDB - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
+# Audio ACDB - from Daisy QKQ1.191002.002-V11.0.14.0.QDLMIXM
 vendor/etc/acdbdata/adsp_avs_config.acdb
 vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
@@ -17,12 +17,12 @@ vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb
 vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb
 vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp
 
-# Camera - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
+# Camera - from Daisy QKQ1.191002.002-V11.0.14.0.QDLMIXM
 lib64/libseemore.so
-vendor/lib/libchromaflash.so
 vendor/lib/hw/camera.msm8953.so
 vendor/lib/libcapiv2svacnn.so
 vendor/lib/libcapiv2vop.so
+vendor/lib/libchromaflash.so
 vendor/lib/libdualcameraddm.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libft2vendor.so
@@ -67,7 +67,7 @@ vendor/lib/libllvd_smore.so|740de4c339772df80858ddd9390f91ead71eadeb
 vendor/lib/libllvd_sw_tnr.so|406895e2ae614ac84a62d1758bce1810b99c5cda
 vendor/lib/libmmcamera_sw_tnr.so|59b0f350eb0cfa85399c296af14ac680ca99705e
 
-# Camera Actuators - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
+# Camera Actuators - from Daisy QKQ1.191002.002-V11.0.14.0.QDLMIXM
 vendor/lib/libactuator_ad5816g.so
 vendor/lib/libactuator_ad5823.so
 vendor/lib/libactuator_ak7345.so
@@ -87,16 +87,16 @@ vendor/lib/libactuator_rohm_bu64243gwz.so
 vendor/lib/libactuator_sakura_dw9714v_ofilm.so
 vendor/lib/libactuator_sakura_dw9714v_sunny.so
 
-# Camera Arcsoft - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
+# Camera Arcsoft - from Daisy QKQ1.191002.002-V11.0.14.0.QDLMIXM
 vendor/lib/libarcsoft_beautyshot.so
 vendor/lib/libarcsoft_dualcam_refocus.so
 vendor/lib/libarcsoft_high_dynamic_range.so
 
-# Camera Bin - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
+# Camera Bin - from Daisy QKQ1.191002.002-V11.0.14.0.QDLMIXM
 vendor/bin/mm-qcamera-app
 vendor/bin/mm-qcamera-daemon
 
-# Camera Chromatix - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
+# Camera Chromatix - from Daisy QKQ1.191002.002-V11.0.14.0.QDLMIXM
 vendor/lib/libchromatix_csidtg_common.so
 vendor/lib/libchromatix_csidtg_cpp_preview.so
 vendor/lib/libchromatix_csidtg_postproc.so
@@ -1620,7 +1620,7 @@ vendor/lib/libchromatix_sakura_s5k5e8_sunny_snapshot.so
 vendor/lib/libchromatix_sakura_s5k5e8_sunny_zsl_preview_3a.so
 vendor/lib/libchromatix_sakura_s5k5e8_sunny_zsl_video_3a.so
 
-# Camera Configs - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
+# Camera Configs - from Daisy QKQ1.191002.002-V11.0.14.0.QDLMIXM
 vendor/etc/camera/camera_config.xml
 vendor/etc/camera/csidtg_camera.xml
 vendor/etc/camera/csidtg_chromatix.xml
@@ -1660,7 +1660,7 @@ vendor/etc/camera/sakura_s5k5e8_sunny_chromatix_cn.xml
 vendor/etc/camera/sakura_s5k5e8_sunny_chromatix_factory.xml
 vendor/etc/camera/sakura_s5k5e8_sunny_chromatix_india.xml
 
-# Camera Firmware - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
+# Camera Firmware - from Daisy QKQ1.191002.002-V11.0.14.0.QDLMIXM
 vendor/firmware/cpp_firmware_v1_10_0.fw
 vendor/firmware/cpp_firmware_v1_12_0.fw
 vendor/firmware/cpp_firmware_v1_1_1.fw
@@ -1673,10 +1673,10 @@ vendor/firmware/cpp_firmware_v1_5_2.fw
 vendor/firmware/cpp_firmware_v1_6_0.fw
 vendor/firmware/cpp_firmware_v1_8_0.fw
 
-# Camera OIS - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
+# Camera OIS - from Daisy QKQ1.191002.002-V11.0.14.0.QDLMIXM
 vendor/lib/libois_lc898122.so
 
-# Camera Sensors - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
+# Camera Sensors - from Daisy QKQ1.191002.002-V11.0.14.0.QDLMIXM
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_dcrf.so
@@ -1831,7 +1831,7 @@ vendor/lib64/libmmcamera_dbg.so
 vendor/lib64/libmmcamera_tintless_algo.so
 vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 
-# Camera HIDL - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM (HACK NEEDED)
+# Camera HIDL - from Daisy QKQ1.191002.002-V11.0.14.0.QDLMIXM (HACK NEEDED)
 vendor/bin/hw/android.hardware.camera.provider@2.4-service
 vendor/etc/init/android.hardware.camera.provider@2.4-service.rc
 vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
@@ -1855,7 +1855,7 @@ vendor/lib64/camera.device@3.4-impl.so
 vendor/lib64/camera.device@3.5-external-impl.so
 vendor/lib64/camera.device@3.5-impl.so
 
-# Consumer IR - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
+# Consumer IR - from Daisy QKQ1.191002.002-V11.0.14.0.QDLMIXM
 vendor/lib64/hw/consumerir.default.so
 
 # Display Calibration - from sakura
@@ -1863,7 +1863,7 @@ vendor/etc/qdcm_calib_data_hx8399c_fhdplus_video_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_ili7807_fhdplus_video_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_otm1911_fhdplus_video_mode_dsi_panel.xml
 
-# Fingerprint - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
+# Fingerprint - from Daisy QKQ1.191002.002-V11.0.14.0.QDLMIXM
 -vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
@@ -1879,7 +1879,7 @@ vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
-# Fingerprint firmware - from Daisy QKQ1.191002.002-V11.0.5.0.QDLMIXM
+# Fingerprint firmware - from Daisy QKQ1.191002.002-V11.0.14.0.QDLMIXM
 etc/firmware/goodix_firmware.bin
 vendor/firmware/fpctzapp.b00
 vendor/firmware/fpctzapp.b01
@@ -1898,9 +1898,9 @@ vendor/firmware/goodixfp.b05
 vendor/firmware/goodixfp.b06
 vendor/firmware/goodixfp.mdt
 
-# QC RIL - from LA.UM.8.6.2.r1-08400-89xx.0
-vendor/bin/hw/qcrild|e6388657a78502c6211ff7dd54d1edbc7e97f148
-vendor/etc/init/qcrild.rc|f9c32f5e7a8e7f4a0df1dcce174de169b8d7c060
-vendor/lib64/libqcrilFramework.so|7d51b9b1d28c3b09aa8b76251c5831b8275dcc6d
-vendor/lib64/libril-qc-hal-qmi.so|4b93df3dd320dc6100e3199cd26f21704ca9c2bb
-vendor/lib64/qcrild_librilutils.so|22ae52ea7750c9011e3880852d800d94d54b030e
+# QC RIL - from Daisy QKQ1.191002.002-V11.0.14.0.QDLMIXM
+vendor/bin/hw/qcrild
+vendor/etc/init/qcrild.rc
+vendor/lib64/libqcrilFramework.so
+vendor/lib64/libril-qc-hal-qmi.so
+vendor/lib64/qcrild_librilutils.so
