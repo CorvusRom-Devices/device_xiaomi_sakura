@@ -1,10 +1,9 @@
 allow init proc:file setattr;
 allow init proc_boot_reason:file r_file_perms;
-<<<<<<< HEAD
-=======
+
 allow init proc_touchpanel:file { open write };
 allow init socket_device:sock_file { create setattr unlink };
->>>>>>> 743f6c5... [DNM]sakura: sepolicy: Address some denials
+
 allow init hal_memtrack_default:process noatsecure;
 allow hal_memtrack_default sysfs_kgsl:lnk_file read;
 allow system_app sysfs_kgsl:lnk_file read;

@@ -8,8 +8,7 @@ allow system_server sysfs_rtc:file r_file_perms;
 
 # fingerprint
 allow system_server goodix_fp_hwservice:hwservice_manager find;
-<<<<<<< HEAD
-=======
+
 
 allow system_server exported_camera_prop:file { read open getattr };
 allow system_server userspace_reboot_config_prop:file { read open getattr };
@@ -19,4 +18,4 @@ allow system_server vendor_camera_prop:file { read open getattr };
 # Allow system_server to set persist_camera_prop
 get_prop(system_server, vendor_camera_prop)
 get_prop(system_server, vendor_persist_camera_prop)
->>>>>>> 743f6c5... [DNM]sakura: sepolicy: Address some denials
+
