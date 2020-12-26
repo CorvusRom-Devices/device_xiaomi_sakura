@@ -148,8 +148,8 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8953
 TARGET_KERNEL_CONFIG := sleepy_defconfig
 TARGET_KERNEL_VERSION := 4.9
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
-TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := r370808b
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-elf-
+KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/gcc/linux-x86/aarch64/aarch64-elf/bin
 
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
