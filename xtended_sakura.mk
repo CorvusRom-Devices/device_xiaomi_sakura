@@ -31,11 +31,11 @@ $(call inherit-product, vendor/MiuiCamera/config.mk)
 $(call inherit-product, device/xiaomi/sakura/device.mk)
 
 # Inherit some common FalconOS stuff.
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sakura
-PRODUCT_NAME := aosip_sakura
+PRODUCT_NAME := xtended_sakura
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 6 Pro
@@ -54,3 +54,5 @@ TARGET_INCLUDE_STOCK_ARCORE := true
 
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
+
+XTENDED_MAINTAINER := Zabuka_Zuzu

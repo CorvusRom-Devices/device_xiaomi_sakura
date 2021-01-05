@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosip_sakura.mk
+    $(LOCAL_DIR)/xtended_sakura.mk
