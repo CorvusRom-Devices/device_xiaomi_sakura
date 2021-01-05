@@ -15,12 +15,7 @@
      limitations under the License.
 -->
 <resources>
-    <!-- Dirac settings -->
-    <string name="dirac_title">Mi Sound Enhancer</string>
-    <string name="dirac_summary">Optimize audio quality</string>
-    <string name="dirac_headset_title">Choose headphones type</string>
-    <string name="dirac_preset_title">Choose a preset</string>
-
+    
    <!-- HAL3 | HAL1 Switch button profiles -->
     <string name="camera_title">Camera HAL Switch</string>
     <string name="camera_pref_title">Choose a HAL</string>
