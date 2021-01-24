@@ -1,0 +1,19 @@
+[
+ {"remote":"github",
+   "repository":"CorvusRom-Devices/device_xiaomi_msm8953-common-sakura",
+   "target_path":"device/xiaomi/msm8953-common",
+   "branch": "11"
+}, 
+{
+   "remote":"github",
+   "repository":"CorvusRom-Devices/vendor_xiaomi_sakura",
+   "target_path":"vendor/xiaomi",
+   "branch": "11" 
+ },
+ {
+   "remote": "github",
+   "repository": "AlexThundrous/revvz",
+   "target_path": "kernel/xiaomi/msm8953",
+   "branch": "11"
+ }
+]
