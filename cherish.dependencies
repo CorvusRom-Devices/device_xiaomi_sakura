@@ -1,13 +1,13 @@
 [
     {
         "remote":       "github",
-        "repository":   "yusufnoor786/device-xiaomi-sakura-11",
+        "repository":   "yadavmohit19/device_xiaomi_sakura",
         "target_path":  "device/xiaomi/sakura",
         "revision":     "Android-11"
     },
     {
         "remote":       "github",
-        "repository":   "yusufnoor786/vendor-xiaomi-sakura-11",
+        "repository":   "yadavmohit19/vendor_xiaomi",
         "target_path":  "vendor/xiaomi",
         "revision":     "Android-11"
     },

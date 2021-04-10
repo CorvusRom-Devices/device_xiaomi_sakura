@@ -27,13 +27,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/sakura/device.mk)
 
-# Inherit some common FalconOS stuff.
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+# Inherit some common cherishOS stuff.
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
-DEVICE_MAINTAINER := Zabuka Zuzu
+DEVICE_MAINTAINER := Yadavmohit19
 PRODUCT_DEVICE := sakura
-PRODUCT_NAME := xtended_sakura
+PRODUCT_NAME := cherish_sakura
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 6 Pro
@@ -53,4 +53,3 @@ TARGET_INCLUDE_STOCK_ARCORE := true
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-XTENDED_MAINTAINER := Zabuka_Zuzu
