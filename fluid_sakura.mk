@@ -27,13 +27,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/sakura/device.mk)
 
-# Inherit some common cherishOS stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+# Inherit some common fluidOS stuff.
+$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
+
+#Fluid flags
+FLUID_BUILD_TYPE := UNOFFICIAL
+PRODUCT_PRODUCT_PROPERTIES += \
+ ro.fluid.maintainer=YadavMohit19 \
+ ro.fluid.cpu=Snapdragon625
 
 # Device identifier. This must come after all inclusions
 DEVICE_MAINTAINER := Yadavmohit19
 PRODUCT_DEVICE := sakura
-PRODUCT_NAME := cherish_sakura
+PRODUCT_NAME := fluid_sakura
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 6 Pro

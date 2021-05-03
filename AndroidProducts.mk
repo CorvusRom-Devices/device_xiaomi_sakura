@@ -14,4 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_sakura.mk
+    $(LOCAL_DIR)/fluid_sakura.mk
+
+COMMON_LUNCH_CHOICES := \
+    fluid_sakura-user \
+    fluid_sakura-userdebug \
+    fluid_sakura-eng
