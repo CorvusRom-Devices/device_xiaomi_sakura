@@ -101,8 +101,8 @@ debug.enable.sglscale=1 \
 debug.gralloc.enable_fb_ubwc=1 \
 debug.hwui.renderer=skiagl \
 debug.mdpcomp.logs=0 \
-debug.sf.enable_hwc_vds=1 \
 debug.sf.hw=1 \
+debug.sdm.support_writeback=0 \
 debug.sf.latch_unsignaled=1 \
 debug.cpurend.vsync=false \
 debug.sf.recomputecrop=0 \
@@ -149,7 +149,6 @@ ro.gps.agps_provider=1
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
 av.debug.disable.pers.cache=1 \
-debug.sf.enable_hwc_vds=1 \
 debug.stagefright.omx_default_rank=0 \
 media.aac_51_output_enabled=true \
 media.msm8956hw=0 \
