@@ -194,7 +194,10 @@ PRODUCT_PACKAGES += \
     libqdMetaData.system \
     libgenlock \
     libnl \
-    libtinyxml
+    libtinyxml \
+    vendor.display.config@1.0.vendor \
+    vendor.display.config@2.0 \
+    vendor.display.config@2.0.vendor
 
 # DRM
 PRODUCT_PACKAGES += \
