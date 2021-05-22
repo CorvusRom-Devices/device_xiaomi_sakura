@@ -147,9 +147,8 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8953
-TARGET_KERNEL_CONFIG := sleepy_defconfig
+TARGET_KERNEL_CONFIG := sakura_defconfig
 TARGET_KERNEL_VERSION := 4.9
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := r370808b
 
@@ -200,7 +199,7 @@ include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 SELINUX_IGNORE_NEVERALLOWS := true
 
 # Sepolicy
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-minimal
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
