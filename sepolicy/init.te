@@ -20,3 +20,12 @@ allow init sysfs_kgsl:lnk_file { read };
 allow init sysfs:file { setattr };
 allow init proc_last_kmsg:file { setattr };
 allow init iorapd_data_file:file getattr;
+
+# SELinux Switch
+allow init su:process { noatsecure  rlimitinh  siginh  transition };
+
+# Boost
+allow init vendor_file:file { execute execute_no_trans };
+
+# USB Fastcharger
+allow init sysfs_fcharge:file { write };

@@ -13,7 +13,6 @@ camera.dual.mode                                              u:object_r:camera_
 persist.camera.                                               u:object_r:camera_prop:s0
 hardware.camera.autohdr                                       u:object_r:camera_prop:s0
 vendor.camera.                                                u:object_r:vendor_camera_prop:s0
-vendor.camera.aux.packageexcludelist                          u:object_r:exported_default_prop:s0
 
 # Google camera hal read only props
 ro.vendor.camera.                                             u:object_r:camera_ro_prop:s0
@@ -36,3 +35,19 @@ persist.audio.dirac.                                          u:object_r:dirac_p
 
 # HAL3 | HAL1 Switch
 persist.camera.profile                                        u:object_r:camera_prop:s0
+
+# HAL3
+persist.camera.HAL3.enable                                    u:object_r:camera_prop:s0
+
+# GPUboost
+persist.gpuboost.profile                                      u:object_r:gpuboost_prop:s0
+
+# CPUboost
+persist.cpuboost.profile                                      u:object_r:cpuboost_prop:s0
+
+persist.cpucore.profile                                       u:object_r:cpucore_prop:s0
+persist.lkm.profile		                              u:object_r:lkm_prop:s0
+persist.tcp.profile		                              u:object_r:tcp_prop:s0
+
+# Spectrum
+persist.spectrum.profile                                      u:object_r:spectrum_prop:s0

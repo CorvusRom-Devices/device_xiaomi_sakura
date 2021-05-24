@@ -1,8 +1,6 @@
 allow hal_audio_default vendor_audio_prop:file { getattr open read };
 allow hal_audio_default vendor_data_file:dir { create write add_name };
 allow hal_audio_default vendor_data_file:file { append create read };
-get_prop(hal_audio_default, dirac_prop)
-set_prop(hal_audio_default, dirac_prop)
 allow hal_audio_default sysfs:dir { read };
 allow hal_audio_default sysfs:dir { open };
 
@@ -12,4 +10,8 @@ userdebug_or_eng(`
 
 dontaudit hal_audio_default diag_device:chr_file rw_file_perms;
 
-
+# Dirac
+allow hal_audio_default sysfs:dir { open read };
+get_prop(hal_audio_default, dirac_prop)
+set_prop(hal_audio_default, dirac_prop)
+allow hal_audio_default hal_power_hwservice:hwservice_manager find;

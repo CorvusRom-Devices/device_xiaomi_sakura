@@ -12,3 +12,20 @@ vendor_restricted_prop(vendor_mwqem_prop);
 type thermal_engine_prop, property_type;
 type vendor_thermal_prop, property_type;
 
+# Spectrum
+type spectrum_prop, property_type;
+
+# GPUboost
+type gpuboost_prop, property_type;
+
+# CPUboost
+type cpuboost_prop, property_type;
+
+# CPU Core
+type cpucore_prop, property_type;
+
+# LMK
+type lkm_prop, property_type;
+
+# TCP
+type tcp_prop, property_type;
