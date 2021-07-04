@@ -148,8 +148,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.so \
     vendor.qti.hardware.camera.device@1.0.vendor \
     libdng_sdk.vendor \
-    libgui_vendor \
-    CameraGo
+    libgui_vendor
 
 # Component overrides
 PRODUCT_COPY_FILES += \
