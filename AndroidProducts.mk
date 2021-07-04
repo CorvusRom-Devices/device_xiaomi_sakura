@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/fluid_sakura.mk
+    $(LOCAL_DIR)/corvus_sakura.mk
 
 COMMON_LUNCH_CHOICES := \
-    fluid_sakura-user \
-    fluid_sakura-userdebug \
-    fluid_sakura-eng
+    corvus_sakura-user \
+    corvus_sakura-userdebug \
+    corvus_sakura-eng

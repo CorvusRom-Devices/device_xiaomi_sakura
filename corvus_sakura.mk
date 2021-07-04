@@ -27,19 +27,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/sakura/device.mk)
 
-# Inherit some common fluidOS stuff.
-$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
+# Inherit some common CorvusOS stuff.
+$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
 
-#Fluid flags
-FLUID_BUILD_TYPE := UNOFFICIAL
-PRODUCT_PRODUCT_PROPERTIES += \
- ro.fluid.maintainer=YadavMohit19 \
- ro.fluid.cpu=Snapdragon625
+# Poduct spec
+IS_PHONE := true
+scr_resolution := 1080
 
 # Device identifier. This must come after all inclusions
 DEVICE_MAINTAINER := Yadavmohit19
 PRODUCT_DEVICE := sakura
-PRODUCT_NAME := fluid_sakura
+PRODUCT_NAME := corvus_sakura
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 6 Pro
@@ -55,7 +53,4 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_GAPPS_ARCH := arm64
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_STOCK_ARCORE := true
-
-# Boot Animation
-TARGET_BOOT_ANIMATION_RES := 1080
 
