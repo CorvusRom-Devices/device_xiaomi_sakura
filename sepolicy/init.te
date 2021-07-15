@@ -6,7 +6,6 @@ allow init socket_device:sock_file { create setattr unlink };
 allow hal_memtrack_default sysfs_kgsl:lnk_file read;
 allow system_app sysfs_kgsl:lnk_file read;
 allow hal_fingerprint_default storage_file:lnk_file read;
-allow init vendor_file:file { execute };
 allow init hwservicemanager:binder { call };
 allow init hwservicemanager:binder { transfer };
 allow init sysfs_graphics:file { read };
@@ -25,7 +24,7 @@ allow init iorapd_data_file:file getattr;
 allow init su:process { noatsecure  rlimitinh  siginh  transition };
 
 # Boost
-allow init vendor_file:file { execute execute_no_trans };
+allow init vendor_file:file { execute };
 
 # USB Fastcharger
 allow init sysfs_fcharge:file { write };
