@@ -168,11 +168,6 @@
     <string name="custom_seekbar_default_value_to_set">Default value: <xliff:g id="v">%s</xliff:g>\nLong press to set</string>
     <string name="custom_seekbar_default_value_is_set">Default value is set</string>
 
-    <!-- Log Tile -->
-    <string name="quick_settings_log_tile_label">LogTile</string>
-    <string name="quick_settings_log_tile_dialog_title">Options</string>
-    <string name="cannot_get_su">Action failed because of missing superuser access</string>
-
     <!-- FPS Info -->
     <string name="fps_info_title">FPS Info Overlay</string>
     <string name="fps_info_summary">Show overlay with current frames per second</string>
@@ -310,17 +305,6 @@
     <string name="tcpcongestion_vegas">vegas</string>
     <string name="tcpcongestion_nv">nv</string>
     <string name="tcpcongestion_ip">ip</string>
-
-    <!-- Selinux Switch -->
-    <string name="selinux_category">SELinux</string>
-    <string name="selinux_explanation_summary">SELinux is a set of kernel modifications and user-space tools. Changing modes can cause unwanted effects. Use at your own risk.</string>
-    <string name="selinux_mode_title">SELinux mode</string>
-    <string name="selinux_permissive_summary">Permissive</string>
-    <string name="selinux_enforcing_summary">Enforcing</string>
-    <string name="selinux_persistence_title">Persist across reboots</string>
-    <string name="selinux_persistence_summary">Restore the above set sepolicy mode on each boot</string>
-    <string name="selinux_permissive_toast_title">Selinux set to permissive!</string>
-    <string name="selinux_enforcing_toast_title">Selinux set to enforcing!</string>
 
     <!-- Speaker -->
     <string name="speaker_category">Speaker</string>

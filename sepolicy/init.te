@@ -20,9 +20,6 @@ allow init sysfs:file { setattr };
 allow init proc_last_kmsg:file { setattr };
 allow init iorapd_data_file:file getattr;
 
-# SELinux Switch
-allow init su:process { noatsecure  rlimitinh  siginh  transition };
-
 # Boost
 allow init vendor_file:file { execute };
 

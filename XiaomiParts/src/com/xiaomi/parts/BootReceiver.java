@@ -65,39 +65,6 @@ public class BootReceiver extends BroadcastReceiver implements Utils {
         } catch (Exception e) {
             Log.e(TAG, "Package not found", e);
         }
-        SharedPreferences sharedpreferences = context.getSharedPreferences("selinux_pref",
-                Context.MODE_PRIVATE);
-        if (sharedpreferences.contains(PREF_SELINUX_MODE)) {
-            boolean currentIsSelinuxEnforcing = SELinux.isSELinuxEnforced();
-            boolean isSelinuxEnforcing =
-                    sharedpreferences.getBoolean(PREF_SELINUX_MODE,
-                            currentIsSelinuxEnforcing);
-            if (isSelinuxEnforcing) {
-                if (!currentIsSelinuxEnforcing) {
-                    try {
-                        SuShell.runWithSuCheck("setenforce 1");
-                        showToast(context.getString(R.string.selinux_enforcing_toast_title),
-                                context);
-                    } catch (SuShell.SuDeniedException e) {
-                        showToast(context.getString(R.string.cannot_get_su), context);
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                }
-            } else {
-                if (currentIsSelinuxEnforcing) {
-                    try {
-                        SuShell.runWithSuCheck("setenforce 0");
-                        showToast(context.getString(R.string.selinux_permissive_toast_title),
-                                context);
-                    } catch (SuShell.SuDeniedException e) {
-                        showToast(context.getString(R.string.cannot_get_su), context);
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-        }
     }
 
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);

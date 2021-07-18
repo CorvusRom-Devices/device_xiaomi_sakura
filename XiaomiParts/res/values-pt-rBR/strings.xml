@@ -163,11 +163,6 @@
     <string name="custom_seekbar_default_value_to_set">Valor padrão: <xliff:g id="v">%s</xliff:g>\nLong press to set</string>
     <string name="custom_seekbar_default_value_is_set">O valor padrão é definido</string>
 
-    <!-- Log Tile -->
-    <string name="quick_settings_log_tile_label">LogTile</string>
-    <string name="quick_settings_log_tile_dialog_title">Opções</string>
-    <string name="cannot_get_su">A ação falhou devido à falta de acesso de superusuário</string>
-
     <!-- FPS Info -->
     <string name="fps_info_title">Exibir FPS</string>
     <string name="fps_info_summary">Mostrar FPS atualizado por segundo</string>
@@ -297,17 +292,6 @@
     <string name="tcpcongestion_bic">bic</string>
     <string name="tcpcongestion_highspeed">highspeed</string>
     <string name="tcpcongestion_htcp">htcp</string>
-
-    <!-- Selinux Switch -->
-    <string name="selinux_category">SELinux</string>
-    <string name="selinux_explanation_summary">SELinux é um conjunto de modificações do kernel e ferramentas de espaço do usuário. Alterar os modos pode causar efeitos indesejados. Use por sua conta e risco.</string>
-    <string name="selinux_mode_title">Modo do SELinux</string>
-    <string name="selinux_permissive_summary">Permissive</string>
-    <string name="selinux_enforcing_summary">Enforcing</string>
-    <string name="selinux_persistence_title">Persistir nas reinicializações</string>
-    <string name="selinux_persistence_summary">Restaure o modo sepolicy acima definido em cada inicialização</string>
-    <string name="selinux_permissive_toast_title">Selinux definido como permissive!</string>
-    <string name="selinux_enforcing_toast_title">Selinux definido como enforcing!</string>
 
     <!-- Speaker -->
     <string name="speaker_category">Alto-Falante</string>
