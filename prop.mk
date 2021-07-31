@@ -149,6 +149,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
    iorapd.perfetto.enable=true \
    iorapd.readahead.enable=true
 
+# GBoard
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.google.ime.kb_pad_port_b=1 \
+    ro.com.google.ime.corner_key_r=35
+
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.egl=adreno \
