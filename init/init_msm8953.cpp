@@ -1,7 +1,6 @@
 /*
    Copyright (c) 2016, The CyanogenMod Project
    Copyright (c) 2019, The LineageOS Project
-
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
    met:
@@ -14,7 +13,6 @@
     * Neither the name of The Linux Foundation nor the names of its
       contributors may be used to endorse or promote products derived
       from this software without specific prior written permission.
-
    THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
    WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
@@ -33,6 +31,7 @@
 #include <string.h>
 #include <sys/sysinfo.h>
 #include <unistd.h>
+#include <vector>
 
 #include <android-base/logging.h>
 #include <android-base/properties.h>
@@ -42,24 +41,31 @@
 #include "property_service.h"
 #include "vendor_init.h"
 
-void property_override(char const prop[], char const value[])
+using android::base::GetProperty;
+
+void property_override(char const prop[], char const value[], bool add = true)
 {
-	prop_info *pi;
-	pi = (prop_info *)__system_property_find(prop);
-	if (pi)
-		__system_property_update(pi, value, strlen(value));
-	else
-		__system_property_add(prop, strlen(prop), value, strlen(value));
+    auto pi = (prop_info *) __system_property_find(prop);
+    if (pi != nullptr) {
+        __system_property_update(pi, value, strlen(value));
+    } else if (add) {
+        __system_property_add(prop, strlen(prop), value, strlen(value));
+    }
 }
 
-void property_override_multifp(char const buildfp[], char const systemfp[],
-	char const bootimagefp[], char const vendorfp[], char const value[])
-{
-    property_override(buildfp, value);
-    property_override(systemfp, value);
-    property_override(vendorfp, value);
-    property_override(bootimagefp, value);
-}
+std::vector<std::string> ro_props_default_source_order = {
+        "", "bootimage.", "odm.", "product.", "system.", "system_ext.", "vendor.",
+};
+
+void set_ro_build_prop(const std::string& prop, const std::string& value) {
+    for (const auto& source : ro_props_default_source_order) {
+        auto prop_name = "ro." + source + "build." + prop;
+        if (source == "")
+            property_override(prop_name.c_str(), value.c_str());
+        else
+            property_override(prop_name.c_str(), value.c_str(), false);
+    }
+};
 
 void load_dalvik_properties()
 {
@@ -85,17 +91,23 @@ void load_dalvik_properties()
 		property_override("dalvik.vm.heapgrowthlimit", "192m");
 		property_override("dalvik.vm.heapsize", "512m");
 		property_override("dalvik.vm.heapmaxfree", "8m");
-		property_override("dalvik.vm.heapminfree", "512k");
+		property_override("dalvik.vm.heapminfree", "2m");
 	}
 }
 
 void vendor_load_properties()
 {
-	load_dalvik_properties();
+        std::string fingerprint;
+        std::string description;
 
 	// fingerprint
-	property_override("ro.build.description", "redfin-user 11 RQ3A.210705.001 7380771 release-keys");
-	property_override_multifp("ro.build.fingerprint", "ro.system.build.fingerprint", "ro.vendor.build.fingerprint", "ro.bootimage.build.fingerprint", "google/redfin/redfin:11/RQ3A.210705.001/7380771:user/release-keys");
+        fingerprint = "google/redfin/redfin:11/RQ3A.210705.001/7380771:user/release-keys";
+        description = "redfin-user 11 RQ3A.210705.001 7380771 release-keys";
+
+        set_ro_build_prop("fingerprint", fingerprint);
+        property_override("ro.build.description", description.c_str());
+
+        load_dalvik_properties();
 
 	// Magisk Hide
 	property_override("ro.boot.verifiedbootstate", "green");
