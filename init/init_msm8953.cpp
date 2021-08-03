@@ -36,6 +36,8 @@
 #include <android-base/logging.h>
 #include <android-base/properties.h>
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
+#include <sys/stat.h>
+#include <sys/types.h>
 #include <sys/_system_properties.h>
 
 #include "property_service.h"
@@ -50,6 +52,29 @@ void property_override(char const prop[], char const value[], bool add = true)
         __system_property_update(pi, value, strlen(value));
     } else if (add) {
         __system_property_add(prop, strlen(prop), value, strlen(value));
+    }
+}
+
+/* From Magisk@jni/magiskhide/hide_policy.cpp */
+static const char *prop_key[] =
+        { "ro.boot.vbmeta.device_state", "ro.boot.verifiedbootstate", "ro.boot.flash.locked",
+          "ro.boot.veritymode", "ro.boot.warranty_bit", "ro.warranty_bit",
+          "ro.debuggable", "ro.secure", "ro.build.type", "ro.build.tags",
+          "ro.vendor.boot.warranty_bit", "ro.vendor.warranty_bit",
+          "vendor.boot.vbmeta.device_state", "vendor.boot.verifiedbootstate", nullptr };
+
+static const char *prop_val[] =
+        { "locked", "green", "1",
+          "enforcing", "0", "0",
+          "0", "1", "user", "release-keys",
+          "0", "0",
+          "locked", "green", nullptr };
+
+static void workaround_properties() {
+
+    // Hide all sensitive props
+    for (int i = 0; prop_key[i]; ++i) {
+        property_override(prop_key[i], prop_val[i], false);
     }
 }
 
@@ -108,11 +133,5 @@ void vendor_load_properties()
         property_override("ro.build.description", description.c_str());
 
         load_dalvik_properties();
-
-	// Magisk Hide
-	property_override("ro.boot.verifiedbootstate", "green");
-	property_override("ro.boot.vbmeta.device_state", "locked");
-	property_override("ro.boot.veritymode", "enforcing");
-	property_override("ro.build.type", "user");
-	property_override("ro.build.tags", "release-keys");
+        workaround_properties();
 }
