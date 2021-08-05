@@ -204,6 +204,7 @@ PRODUCT_PACKAGES += \
     libqdMetaData.system \
     libgenlock \
     libnl \
+    libwfdaac \
     libtinyxml \
     vendor.display.config@1.0.vendor \
     vendor.display.config@2.0 \
