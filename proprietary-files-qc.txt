@@ -594,6 +594,9 @@ vendor/lib64/libqmi_common_so.so|325a41290032b082248db307481811b2319284cc
 vendor/lib64/libqmi_csi.so|0c7cfb4bee5479961a8c3942e03f5d25a342663e
 vendor/lib64/libqmi_encdec.so|eedf39676bf4447cb2e3f629d1d18dcad846ab85
 
+# Radio - Telephony - from LA.UM.9.6.2.r1-03600-89xx.0
+system_ext/framework/qti-telephony-common.jar|0c49cfb8025ab06323227c7a72b5af39af3c3de7
+
 # Radio - from LA.UM.8.6.2.r1-08400-89xx.0
 -product/app/atfwd/atfwd.apk|2cdfbd4649a4087fda35995cf66236dbd1113972
 -product/app/datastatusnotification/datastatusnotification.apk|4685df4bb2446950bcb37da83f4acefc69bfcdc3
