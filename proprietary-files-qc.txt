@@ -478,9 +478,9 @@ vendor/lib64/libOmxWmaDec.so|9610a29440a33e6dfca61d330d0d82c9bbe78b03
 -vendor/lib64/libgpustats.so|dd2ecc6c5ef439a8d427a52ab9d153f8e747deff
 vendor/lib64/libmm-color-convertor.so|60efd198ec7461154746c5987e5a267f12f8dbc1
 
-# Modem - from LA.UM.8.6.2.r1-08400-89xx.0
+# Modem - from LA.UM.9.6.2.r1-03600-89xx.0
 vendor/lib/libwms.so|577d673e8eb38ccf33bd2d70115ad78b695e6ac1
-vendor/lib64/libwms.so|522c5b67917decedf38799bf02c1769c34344eee
+vendor/lib64/libwms.so|7d1440beacdc07280804d18f859b1274bb545783
 
 # Perf - from LA.UM.8.6.2.r1-08400-89xx.0
 product/lib/vendor.qti.hardware.perf@1.0.so|14433f3baf7e760208f3e6ebbcb5583c5cfbf91c
@@ -548,6 +548,15 @@ vendor/bin/power_off_alarm|a22dad49a912473d92bf9c111ef7de6dd927b6f2
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|a03a9a1c818595b19272ea6ffb466e23a7fc3b05
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|0119fa4d87505bc5d9426ec8ffe56d9dd3bc9e4f
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so|c7c418cfc889a89ea4f21bf828f626c75a2017c3
+
+# Qcrild - from LA.UM.9.6.2.r1-03600-89xx.0
+vendor/bin/hw/qcrild|d25d2f28227b032fbce336abb01bf93053d85ac9
+vendor/etc/init/qcrild.rc|63c8ffc9bd8a33b56222a471044ee504970b2998
+vendor/lib64/libqcrilFramework.so|da3c0216ddad60f48b1fc90b31a6d6d1114e95be
+vendor/lib64/libqcrildatactl.so|de52eb977508a0dd0af224220fb3f718ff4b8775
+vendor/lib64/libril-qc-hal-qmi.so|75385897c070c56a8cc6d1864c06e5e113026ac8
+vendor/lib64/libril-qc-logger.so|9eed72d839a52d4347755af64e9ad0ca8095f8e5
+vendor/lib64/qcrild_librilutils.so|69354ed8d4f5b18dc890e292bcbfec01fa37edf7
 
 # QMI - from LA.UM.8.6.2.r1-08400-89xx.0
 etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
