@@ -153,7 +153,8 @@ ro.frp.pst=/dev/block/bootdevice/by-name/config
 # Iorap
 PRODUCT_PROPERTY_OVERRIDES += \
    iorapd.perfetto.enable=true \
-   iorapd.readahead.enable=true
+   iorapd.readahead.enable=true \
+   ro.iorapd.enable=true
 
 # GBoard
 PRODUCT_PROPERTY_OVERRIDES += \
