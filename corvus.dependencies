@@ -1,9 +1,15 @@
 [
     {
         "remote":       "github",
-        "repository":   "YadavMohit19/vendor_xiaomi",
+        "repository":   "CorvusRom-Devices/device_xiaomi_sakura",
+        "target_path":  "device/xiaomi/sakura",
+        "branch":       "11"
+    },
+    {
+        "remote":       "github",
+        "repository":   "CorvusRom-Devices/vendor_xiaomi_sakura",
         "target_path":  "vendor/xiaomi",
-        "branch":       "eleven"
+        "branch":       "11"
     },
     {
         "remote":       "github",
@@ -28,5 +34,5 @@
         "repository":   "LineageOS/android_hardware_qcom_media",
         "target_path":  "hardware/qcom-caf/msm8996/media",
         "branch":       "lineage-18.1-caf-msm8996"
-    },
+    }
 ]
