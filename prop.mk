@@ -112,6 +112,7 @@ debug.gralloc.enable_fb_ubwc=1 \
 debug.hwui.renderer=skiavk \
 debug.mdpcomp.logs=0 \
 debug.performance.tuning=1 \
+debug.sf.enable_hwc_vds=1 \
 debug.sf.hw=1 \
 debug.sdm.support_writeback=0 \
 debug.sf.latch_unsignaled=1 \
