@@ -19,6 +19,7 @@ ro.config.media_vol_steps=25 \
 ro.config.vc_call_vol_steps=6 \
 persist.vendor.audio.fluence.speaker=true \
 persist.vendor.audio.fluence.voicecall=true \
+persist.vendor.audio.fluence.voicecomm=true \
 persist.vendor.audio.fluence.voicerec=false \
 persist.vendor.btstack.enable.splita2dp=false \
 ro.vendor.audio.sdk.ssr=false \
