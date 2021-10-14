@@ -116,6 +116,7 @@ debug.sf.hw=1 \
 debug.sdm.support_writeback=0 \
 debug.cpurend.vsync=false \
 debug.sf.recomputecrop=0 \
+debug.renderengine.backend=threaded \
 dev.pm.dyn_samplingrate=1 \
 persist.debug.wfd.enable=1 \
 persist.demo.hdmirotationlock=false \
