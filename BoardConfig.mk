@@ -204,6 +204,7 @@ VENDOR_SECURITY_PATCH := 2020-11-05
 # SELinux
 #include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 SELINUX_IGNORE_NEVERALLOWS := true
+BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
 
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy_minimal
