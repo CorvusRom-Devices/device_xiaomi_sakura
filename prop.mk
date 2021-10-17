@@ -274,6 +274,10 @@ persist.vendor.vt.supported=1 \
 persist.vendor.sys.cnd.iwlan=1 \
 persist.vendor.cne.logging.qxdm=3974
 
+# SoC
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=MSM8953
+
 #Spectrum
 PRODUCT_PROPERTY_OVERRIDES += \
    spectrum.support=1
