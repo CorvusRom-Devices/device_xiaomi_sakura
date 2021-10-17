@@ -27,8 +27,8 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    hardware/xiaomi
+    hardware/xiaomi \
+    hardware/qcom-caf/msm8996
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
@@ -248,6 +248,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-impl \
     android.hardware.health@2.0-service
+
+# Hals
+SRC_MEDIA_HAL_DIR := hardware/qcom-caf/msm8996/media
+SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/msm8996/display
+SRC_AUDIO_HAL_DIR := hardware/qcom-caf/msm8996/audio
 
 # HIDL
 PRODUCT_PACKAGES += \
