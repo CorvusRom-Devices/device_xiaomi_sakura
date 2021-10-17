@@ -91,10 +91,6 @@ PRODUCT_PACKAGES += \
     antradio_app \
     libantradio
 
-# Device-specific Settings
-PRODUCT_PACKAGES += \
-    XiaomiParts
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@5.0-impl \
@@ -547,15 +543,3 @@ PRODUCT_BOOT_JARS += \
 
 # Reduce system image size by limiting java debug info.
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
-
-# XiaomiParts
-PRODUCT_PACKAGES += \
-    XiaomiParts \
-    init.gpuboost.rc \
-    init.gpuboost.sh \
-    init.cpuboost.rc \
-    init.cpuboost.sh \
-    init.parallax.rc \
-    init.parallax.sh \
-    init.spectrum.rc \
-    init.spectrum.sh
