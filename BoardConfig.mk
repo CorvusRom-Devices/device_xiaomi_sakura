@@ -143,6 +143,7 @@ HWUI_COMPILE_FOR_PERF := true
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78af000 androidboot.usbconfigfs=true
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
@@ -195,10 +196,11 @@ ENABLE_VENDOR_RIL_SERVICE := true
 VENDOR_SECURITY_PATCH := 2020-11-05
 
 # SELinux
-include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+#include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Sepolicy
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy_minimal
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
