@@ -30,6 +30,9 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/xiaomi \
     hardware/qcom-caf/msm8996
 
+#kernel
+PRODUCT_VENDOR_KERNEL_HEADERS := device/xiaomi/sakura/kernel-headers
+
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage/lineage-sdk
