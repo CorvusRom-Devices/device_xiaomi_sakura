@@ -1,31 +1,31 @@
 # Camera read only property
-type camera_ro_prop, property_type;
-type vendor_camera_prop, property_type;
+type camera_ro_prop, vendor_property_type, property_type;
+type vendor_camera_prop, vendor_property_type, property_type;
 
 # Dirac
-type dirac_prop, property_type;
+type dirac_prop, vendor_property_type, property_type;
 
 #mwqem property
 vendor_restricted_prop(vendor_mwqem_prop);
 
 # Thermal engine
-type thermal_engine_prop, property_type;
-type vendor_thermal_prop, property_type;
+type thermal_engine_prop, vendor_property_type, property_type;
+type vendor_thermal_prop, vendor_property_type, property_type;
 
 # Spectrum
-type spectrum_prop, property_type;
+type spectrum_prop, vendor_property_type, property_type;
 
 # GPUboost
-type gpuboost_prop, property_type;
+type gpuboost_prop, vendor_property_type, property_type;
 
 # CPUboost
-type cpuboost_prop, property_type;
+type cpuboost_prop, vendor_property_type, property_type;
 
 # CPU Core
-type cpucore_prop, property_type;
+type cpucore_prop, vendor_property_type, property_type;
 
 # LMK
-type lkm_prop, property_type;
+type lkm_prop, vendor_property_type, property_type;
 
 # TCP
-type tcp_prop, property_type;
+type tcp_prop, vendor_property_type, property_type;
