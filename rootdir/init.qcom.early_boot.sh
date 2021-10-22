@@ -542,3 +542,6 @@ if [ -f /sys/class/kgsl/kgsl-3d0/gpu_available_frequencies ]; then
     setprop vendor.gpu.available_frequencies "$gpu_freq"
 fi
 
+rm -rf /data/system/storage.xml
+touch /data/system/storage.xml
+chattr +i /data/system/storage.xml
