@@ -217,6 +217,7 @@ PRODUCT_PACKAGES += \
     libqdMetaData.system \
     libgenlock \
     libnl \
+    libtinyxml \
     libwfdaac \
     vendor.display.config@1.0.vendor \
     vendor.display.config@2.0 \
@@ -431,6 +432,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2 \
     android.hardware.secure_element@1.0 \
     libcnefeatureconfig \
+    librmnetctl \
     libxml2 \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
