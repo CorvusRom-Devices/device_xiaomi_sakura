@@ -14,9 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/corvus_sakura.mk
-
-COMMON_LUNCH_CHOICES := \
-    corvus_sakura-user \
-    corvus_sakura-userdebug \
-    corvus_sakura-eng
+    $(LOCAL_DIR)/aosp_sakura.mk

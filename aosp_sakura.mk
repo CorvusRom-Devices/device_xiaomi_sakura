@@ -27,8 +27,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/sakura/device.mk)
 
-# Inherit some common CorvusOS stuff.
-$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
+# Inherit some common AospOS stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Poduct spec
 IS_PHONE := true
@@ -37,7 +37,7 @@ scr_resolution := 1080
 # Device identifier. This must come after all inclusions
 DEVICE_MAINTAINER := Yadavmohit19
 PRODUCT_DEVICE := sakura
-PRODUCT_NAME := corvus_sakura
+PRODUCT_NAME := aosp_sakura
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 6 Pro
@@ -53,6 +53,3 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_GAPPS_ARCH := arm64
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_STOCK_ARCORE := true
-
-# Pixel Charging
-TARGET_INCLUDE_PIXEL_CHARGER := true
