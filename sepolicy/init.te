@@ -20,10 +20,11 @@ allow init sysfs:file { setattr };
 allow init proc_last_kmsg:file { setattr };
 allow init iorapd_data_file:file getattr;
 allow init oemfs:dir mounton;
+allow init hal_power_service:service_manager { add };
+allow init hal_perf_hwservice:hwservice_manager { find };
 
 # Boost
 allow init vendor_file:file { execute };
 
 # USB Fastcharger
 allow init sysfs_fcharge:file { write };
-
