@@ -126,6 +126,7 @@ ro.qualcomm.cabl=0 \
 ro.sf.lcd_density=420 \
 ro.vendor.display.cabl=2 \
 sdm.debug.disable_skip_validate=1 \
+vendor.display.disable_scaler=1 \
 vendor.display.disable_skip_validate=1 \
 vendor.display.enable_default_color_mode=0 \
 vendor.gralloc.enable_fb_ubwc=1
