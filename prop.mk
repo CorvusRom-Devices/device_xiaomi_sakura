@@ -298,6 +298,7 @@ debug.sf.earlyGl.sf.duration=13500000 \
 debug.sf.earlyGl.app.duration=21000000
 
 # System
+PRODUCT_PROPERTY_OVERRIDES += \
 persist.sys.binary_xml=false
 
 # Time Services
