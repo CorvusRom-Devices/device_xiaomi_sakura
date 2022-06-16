@@ -394,10 +394,6 @@ PRODUCT_PACKAGES += \
     init.camera.rc \
     init.camera.sh
 
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    removepackages
-
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
