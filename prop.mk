@@ -293,11 +293,11 @@ ro.surface_flinger.use_smart_90_for_video=true
 PRODUCT_PROPERTY_OVERRIDES += \
 debug.sf.use_phase_offsets_as_durations=1 \
 debug.sf.late.sf.duration=10500000 \
-debug.sf.late.app.duration=20500000 \
-debug.sf.early.sf.duration=16000000 \
-debug.sf.early.app.duration=16500000 \
-debug.sf.earlyGl.sf.duration=13500000 \
-debug.sf.earlyGl.app.duration=21000000
+debug.sf.late.app.duration=16600000
+debug.sf.early.sf.duration=16600000
+debug.sf.early.app.duration=16600000
+debug.sf.earlyGl.sf.duration=16600000
+debug.sf.earlyGl.app.duration=16600000
 
 # System
 PRODUCT_PROPERTY_OVERRIDES += \
