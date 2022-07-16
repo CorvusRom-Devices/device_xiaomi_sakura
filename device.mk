@@ -153,6 +153,10 @@ PRODUCT_PACKAGES += \
     libmm-qcamera \
     GcamGo
 
+# GrapheneCamera
+PRODUCT_PACKAGES += \
+    GrapheneCamera
+
 # Codec2 modules
 PRODUCT_PACKAGES += \
     com.android.media.swcodec \
